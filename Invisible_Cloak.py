@@ -5,7 +5,6 @@ Spyder Editor
 This is a temporary script file.
 """
 
-##print("HellO Anaconda")
 
 import cv2
 import time   ##give camera time before code executes
