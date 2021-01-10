@@ -1,7 +1,7 @@
 # Invisibility_Cloak
 ## Invisibility_Cloak using Color Detection and Segmentation with OpenCV
 <p align="center">
-<img src="https://github.com/Vinamrata1086/Invisibility_Cloak/blob/master/harry_cloak-removebg-preview.png" alt="Logo" width="125" align=center/> </p>
+<img src="https://github.com/Vinamrata1086/Invisibility_Cloak/blob/master/harry_cloak-removebg-preview.png" alt="Logo" width=200 align=center/> </p>
 
 Fascinate about the magical world of Harry Potter? Remember the **Invisibility Cloak** which Harry had?
 
