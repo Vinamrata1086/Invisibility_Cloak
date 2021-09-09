@@ -19,10 +19,10 @@ time.sleep(5)
 background=0
 
 for i in range(60):  ## 60 iteration so that it can capture the background slowly and clear
-    ret,background=cap.read()     ####returns the image viz is captured and return value (true)
+    ret,background=cap.read()     ####returns the image viz is captured and return value (true) if the picture captured is read correctly
 
 
-background=np.flip(background, axis=1)
+background=np.flip(background, axis=1)      ##flips the image
 
 
 while (cap.isOpened()):
