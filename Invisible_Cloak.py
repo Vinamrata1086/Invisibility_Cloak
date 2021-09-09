@@ -33,6 +33,9 @@ while (cap.isOpened()):
     
     img=np.flip(img,axis=1)
     
+    
+    ##--------Color Detection----------
+    
     hsv=cv2.cvtColor(img, cv2.COLOR_BGR2HSV)   ##convert the original image RGB to HSV
     
     lower_red=np.array([0,120,70])
@@ -46,6 +49,9 @@ while (cap.isOpened()):
     mask2=cv2.inRange(hsv,lower_red,upper_red)
     
     mask1=mask1+mask2   ##mask1 is the input image
+    
+    
+    ##-----Segmentation-------
     mask1=cv2.morphologyEx(mask1, cv2.MORPH_OPEN,np.ones((3,3),np.uint8))   ##MORPH_OPEN ERASES THE ALL THE ERRORS OF THE IMAGE
     mask1=cv2.morphologyEx(mask1, cv2.MORPH_DILATE,np.ones((3,3),np.uint8))   ##MORPH_DILATE SMOOTHENS THE IMAGE   AND np.ones() converts image to matrix
 
