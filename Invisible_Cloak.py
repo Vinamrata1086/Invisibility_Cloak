@@ -59,7 +59,7 @@ while (cap.isOpened()):
     
     
     res1=cv2.bitwise_and(img,img,mask=mask2)  
-    res2=cv2.bitwise_and(background,background,mask=mask1)  #### for segmenting the color from the background
+    res2=cv2.bitwise_and(background,background,mask=mask1)  #### creating image showing static background frame pixels only for the masked region
     
     finalOutput=cv2.addWeighted(res1,1,res2,1,0) ## add the image and cloak
     ##out.write(finalOutput)
